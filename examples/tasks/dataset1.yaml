@@ -42,7 +42,7 @@ tasks:
     status: "in_progress"
     assigned_to: 2
     created_by: 1
-    depends_on: 1  # Depends on Design System
+    depends_on: 1
     blocked_by: null
     priority: 2
     estimated_hours: 30
@@ -57,8 +57,8 @@ tasks:
     status: "blocked"
     assigned_to: 3
     created_by: 1
-    depends_on: 2  # Depends on Homepage Implementation
-    blocked_by: 2  # Blocked by Homepage Implementation (not done yet)
+    depends_on: 2
+    blocked_by: 2
     priority: 3
     estimated_hours: 20
     due_date: "2024-02-07"
@@ -72,8 +72,8 @@ tasks:
     status: "todo"
     assigned_to: 2
     created_by: 1
-    depends_on: 2  # Depends on Homepage Implementation
-    blocked_by: 2  # Also blocked by Homepage Implementation
+    depends_on: 2
+    blocked_by: 2
     priority: 4
     estimated_hours: 25
     due_date: "2024-02-15"
