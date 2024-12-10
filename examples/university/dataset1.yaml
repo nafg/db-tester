@@ -1,0 +1,108 @@
+departments:
+  - id: 1
+    name: "Computer Science"
+    building: "Tech Hall"
+  - id: 2
+    name: "Mathematics"
+    building: "Science Building"
+  - id: 3
+    name: "Physics"
+    building: "Science Building"
+
+professors:
+  - id: 1
+    name: "Dr. Alan Turing"
+    department_id: 1
+    email: "turing@university.edu"
+    hire_date: "2015-09-01"
+  - id: 2
+    name: "Dr. Emmy Noether"
+    department_id: 2
+    email: "noether@university.edu"
+    hire_date: "2018-01-15"
+  - id: 3
+    name: "Dr. Richard Feynman"
+    department_id: 3
+    email: "feynman@university.edu"
+    hire_date: "2016-03-20"
+
+courses:
+  - id: 101
+    code: "CS101"
+    name: "Introduction to Programming"
+    department_id: 1
+    professor_id: 1
+    credits: 3
+    max_students: 30
+  - id: 102
+    code: "MATH201"
+    name: "Abstract Algebra"
+    department_id: 2
+    professor_id: 2
+    credits: 4
+    max_students: 25
+  - id: 103
+    code: "PHYS301"
+    name: "Quantum Mechanics"
+    department_id: 3
+    professor_id: 3
+    credits: 4
+    max_students: 20
+
+students:
+  - id: 1
+    name: "Alice Johnson"
+    email: "alice.j@university.edu"
+    enrollment_date: "2022-09-01"
+    major_department_id: 1
+    advisor_id: 1
+  - id: 2
+    name: "Bob Smith"
+    email: "bob.s@university.edu"
+    enrollment_date: "2022-09-01"
+    major_department_id: 2
+    advisor_id: 2
+  - id: 3
+    name: "Charlie Brown"
+    email: "charlie.b@university.edu"
+    enrollment_date: "2021-09-01"
+    major_department_id: 3
+    advisor_id: 3
+
+enrollments:
+  - id: 1
+    student_id: 1
+    course_id: 101
+    semester: "Fall"
+    year: 2022
+    grade: "A"
+  - id: 2
+    student_id: 1
+    course_id: 102
+    semester: "Fall"
+    year: 2022
+    grade: "B+"
+  - id: 3
+    student_id: 2
+    course_id: 102
+    semester: "Fall"
+    year: 2022
+    grade: "A-"
+  - id: 4
+    student_id: 2
+    course_id: 103
+    semester: "Spring"
+    year: 2023
+    grade: "B"
+  - id: 5
+    student_id: 3
+    course_id: 103
+    semester: "Fall"
+    year: 2022
+    grade: "A+"
+  - id: 6
+    student_id: 3
+    course_id: 101
+    semester: "Spring"
+    year: 2023
+    grade: "A-"

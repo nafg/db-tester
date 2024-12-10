@@ -1,0 +1,87 @@
+users:
+  - id: 1
+    username: "techie"
+    email: "tech@example.com"
+    display_name: "Tech Enthusiast"
+    bio: "Love coding and coffee"
+    created_at: "2023-01-01 10:00:00"
+  - id: 2
+    username: "foodie"
+    email: "food@example.com"
+    display_name: "Food Explorer"
+    bio: "Always hungry for new recipes"
+    created_at: "2023-01-02 11:30:00"
+  - id: 3
+    username: "traveler"
+    email: "travel@example.com"
+    display_name: "World Wanderer"
+    bio: "Collecting memories around the globe"
+    created_at: "2023-01-03 09:15:00"
+
+posts:
+  - id: 1
+    author_id: 1
+    content: "Just launched my new coding project! #coding #tech"
+    created_at: "2023-03-01 14:30:00"
+    parent_post_id: null
+    shared_post_id: null
+    is_edited: false
+  - id: 2
+    author_id: 2
+    content: "This new restaurant is amazing! #food"
+    created_at: "2023-03-01 15:45:00"
+    parent_post_id: null
+    shared_post_id: null
+    is_edited: false
+  - id: 3
+    author_id: 3
+    content: "Wow, that's impressive! Congrats!"
+    created_at: "2023-03-01 16:00:00"
+    parent_post_id: 1
+    shared_post_id: null
+    is_edited: false
+  - id: 4
+    author_id: 1
+    content: "Had to share this amazing food review!"
+    created_at: "2023-03-02 10:00:00"
+    parent_post_id: null
+    shared_post_id: 2
+    is_edited: false
+
+hashtags:
+  - id: 1
+    tag: "coding"
+  - id: 2
+    tag: "tech"
+  - id: 3
+    tag: "food"
+
+post_hashtags:
+  - post_id: 1
+    hashtag_id: 1
+  - post_id: 1
+    hashtag_id: 2
+  - post_id: 2
+    hashtag_id: 3
+
+likes:
+  - user_id: 2
+    post_id: 1
+    created_at: "2023-03-01 14:35:00"
+  - user_id: 3
+    post_id: 1
+    created_at: "2023-03-01 15:00:00"
+  - user_id: 1
+    post_id: 2
+    created_at: "2023-03-01 16:30:00"
+
+follows:
+  - follower_id: 2
+    following_id: 1
+    created_at: "2023-02-01 12:00:00"
+  - follower_id: 3
+    following_id: 1
+    created_at: "2023-02-02 13:00:00"
+  - follower_id: 1
+    following_id: 2
+    created_at: "2023-02-03 14:00:00"
