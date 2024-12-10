@@ -58,7 +58,7 @@ tasks:
     assigned_to: 3
     created_by: 1
     depends_on: 2
-    blocked_by: 2
+    blocked_by: null
     priority: 3
     estimated_hours: 20
     due_date: "2024-02-07"
@@ -69,11 +69,11 @@ tasks:
     project_id: 1
     title: "Content Migration"
     description: "Migrate content to new homepage"
-    status: "todo"
+    status: "blocked"
     assigned_to: 2
     created_by: 1
     depends_on: 2
-    blocked_by: 2
+    blocked_by: 3
     priority: 4
     estimated_hours: 25
     due_date: "2024-02-15"
