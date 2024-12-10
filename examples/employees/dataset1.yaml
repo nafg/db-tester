@@ -1,0 +1,21 @@
+employees:
+  - id: 1
+    name: "Alice Smith"
+    hire_date: "2020-01-15"
+  - id: 2
+    name: "Bob Jones"
+    hire_date: "2019-11-01"
+
+projects:
+  - id: 101
+    name: "Project A"
+    start_date: "2020-02-01"
+    employee_id: 1
+  - id: 102
+    name: "Project B"
+    start_date: "2020-06-15"
+    employee_id: 1
+  - id: 103
+    name: "Project C"
+    start_date: "2019-12-01"
+    employee_id: 2

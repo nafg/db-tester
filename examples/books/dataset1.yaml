@@ -1,0 +1,44 @@
+authors:
+  - id: 1
+    name: "Jane Austen"
+    birth_date: "1775-12-16"
+    nationality: "British"
+  - id: 2
+    name: "George Orwell"
+    birth_date: "1903-06-25"
+    nationality: "British"
+  - id: 3
+    name: "Gabriel García Márquez"
+    birth_date: "1927-03-06"
+    nationality: "Colombian"
+
+genres:
+  - id: 1
+    name: "Classic Literature"
+  - id: 2
+    name: "Science Fiction"
+  - id: 3
+    name: "Magical Realism"
+
+books:
+  - id: 101
+    title: "Pride and Prejudice"
+    author_id: 1
+    genre_id: 1
+    publication_date: "1813-01-28"
+    isbn: "9780141439518"
+    price: 9.99
+  - id: 102
+    title: "1984"
+    author_id: 2
+    genre_id: 2
+    publication_date: "1949-06-08"
+    isbn: "9780451524935"
+    price: 12.99
+  - id: 103
+    title: "One Hundred Years of Solitude"
+    author_id: 3
+    genre_id: 3
+    publication_date: "1967-05-30"
+    isbn: "9780060883287"
+    price: 14.99

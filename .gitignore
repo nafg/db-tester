@@ -1,0 +1,9 @@
+.scala-build/
+.metals/
+.bsp/
+.bloop/
+metals.sbt
+.vscode/
+target/
+*.class
+*.log
