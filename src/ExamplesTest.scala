@@ -1,7 +1,3 @@
-//> using file "YamlToDB.scala"
-//> using dep "org.scalatest::scalatest:3.2.17"
-//> using dep "org.testcontainers:postgresql:1.19.3"
-
 import org.scalatest.funsuite.AnyFunSuite
 import org.scalatest.matchers.should.Matchers
 import org.testcontainers.containers.PostgreSQLContainer

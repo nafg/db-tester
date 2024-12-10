@@ -1,0 +1,5 @@
+//> using scala "3.5.2"
+//> using dep "org.yaml:snakeyaml:2.3"
+//> using dep "org.postgresql:postgresql:42.7.4"
+//> using dep "org.testcontainers:postgresql:1.20.4"
+//> using dep "org.scalatest::scalatest:3.2.19"

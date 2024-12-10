@@ -1,6 +1,3 @@
-//> using dep "org.yaml:snakeyaml:1.33"
-//> using dep "org.postgresql:postgresql:42.6.0"
-
 import org.yaml.snakeyaml.Yaml
 import java.sql.{Connection, PreparedStatement, ResultSet, Types}
 import scala.jdk.CollectionConverters._

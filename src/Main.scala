@@ -1,6 +1,3 @@
-//> using file "YamlToDB.scala"
-//> using dep "org.testcontainers:postgresql:1.19.3"
-
 import org.testcontainers.containers.PostgreSQLContainer
 import java.sql.DriverManager
 import java.nio.file.{Files, Path, Paths}

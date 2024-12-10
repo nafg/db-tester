@@ -1,7 +1,3 @@
-//> using file "YamlToDB.scala"
-//> using dep "org.scalatest::scalatest:3.2.17"
-//> using dep "org.testcontainers:postgresql:1.19.3"
-
 import org.scalatest.funsuite.AnyFunSuite
 import org.scalatest.matchers.should.Matchers
 import org.testcontainers.containers.PostgreSQLContainer
@@ -54,7 +50,7 @@ class YamlToDBTest extends AnyFunSuite with Matchers {
     val result = YamlToDB.parseYaml(yaml)
     result should have size 1
     result should contain key "table1"
-    val tableData = result("table1").asInstanceOf[java.util.List[_]]
+    val tableData = result("table1").asInstanceOf[java.util.List[?]]
     tableData should have size 1
     val row = tableData.get(0).asInstanceOf[java.util.Map[String, Any]]
     row.get("id") shouldBe 1
