@@ -1,0 +1,81 @@
+projects:
+  - id: 1
+    name: "Website Redesign"
+    description: "Modernize company website"
+    start_date: "2024-01-01"
+    end_date: "2024-03-31"
+
+users:
+  - id: 1
+    name: "Sarah Manager"
+    email: "sarah@company.com"
+    role: "manager"
+  - id: 2
+    name: "David Developer"
+    email: "david@company.com"
+    role: "developer"
+  - id: 3
+    name: "Tina Tester"
+    email: "tina@company.com"
+    role: "tester"
+
+tasks:
+  - id: 1
+    project_id: 1
+    title: "Design System Creation"
+    description: "Create new design system and component library"
+    status: "completed"
+    assigned_to: 2
+    created_by: 1
+    depends_on: null
+    blocked_by: null
+    priority: 1
+    estimated_hours: 40
+    due_date: "2024-01-15"
+    created_at: "2024-01-01 09:00:00"
+    completed_at: "2024-01-14 16:30:00"
+
+  - id: 2
+    project_id: 1
+    title: "Homepage Implementation"
+    description: "Implement new homepage using design system"
+    status: "in_progress"
+    assigned_to: 2
+    created_by: 1
+    depends_on: 1  # Depends on Design System
+    blocked_by: null
+    priority: 2
+    estimated_hours: 30
+    due_date: "2024-01-31"
+    created_at: "2024-01-15 09:00:00"
+    completed_at: null
+
+  - id: 3
+    project_id: 1
+    title: "Homepage Testing"
+    description: "Test homepage functionality and responsiveness"
+    status: "blocked"
+    assigned_to: 3
+    created_by: 1
+    depends_on: 2  # Depends on Homepage Implementation
+    blocked_by: 2  # Blocked by Homepage Implementation (not done yet)
+    priority: 3
+    estimated_hours: 20
+    due_date: "2024-02-07"
+    created_at: "2024-01-15 09:00:00"
+    completed_at: null
+
+  - id: 4
+    project_id: 1
+    title: "Content Migration"
+    description: "Migrate content to new homepage"
+    status: "todo"
+    assigned_to: 2
+    created_by: 1
+    depends_on: 2  # Depends on Homepage Implementation
+    blocked_by: 2  # Also blocked by Homepage Implementation
+    priority: 4
+    estimated_hours: 25
+    due_date: "2024-02-15"
+    created_at: "2024-01-15 09:00:00"
+    completed_at: null
